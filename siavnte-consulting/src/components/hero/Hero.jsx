@@ -32,11 +32,11 @@ const Hero = () => {
       {/* Background with Overlay Image */}
       <div 
         className="absolute inset-0 z-0 bg-[url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center"
-        style={{ opacity: 0.12 }}
+        style={{ opacity: 0.6 }}
       />
       
-      {/* Blue Gradient Overlay */}
-      <div className="absolute inset-0 z-1 bg-gradient-to-br from-[#0F172A] via-[#1E40AF]/80 to-[#0F172A] opacity-90" />
+      {/* Dark Overlay for text readability */}
+      <div className="absolute inset-0 z-1 bg-secondary/70" />
 
       {/* Floating Orbs */}
       <motion.div 
@@ -110,7 +110,7 @@ const Hero = () => {
             <div key={index} className="flex flex-col items-center md:items-start text-center md:text-left">
               <div className="text-3xl md:text-5xl font-playfair font-bold text-white mb-2 flex items-baseline">
                 {stat.value !== null ? (
-                  <CountUp end={stat.value} duration={3} delay={1} />
+                  <span>{stat.value}</span>
                 ) : (
                   <span>{stat.text}</span>
                 )}

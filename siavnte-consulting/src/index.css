@@ -54,10 +54,10 @@
   }
 
   .gradient-gold {
-    background: linear-gradient(to right, #D4AF37, #FDE08B);
+    background-image: linear-gradient(to right, #D4AF37, #FDE08B);
   }
   
   .gradient-blue {
-    background: linear-gradient(135deg, #1E40AF, #3B82F6);
+    background-image: linear-gradient(135deg, #1E40AF, #3B82F6);
   }
 }
